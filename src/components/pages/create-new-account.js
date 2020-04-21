@@ -29,7 +29,7 @@ export default class NewAccount extends Component {
   handleSubmit(event) {
     axios
       .post(
-        'https://jel-flask-dating-app-api.herokuapp.com/profile',
+        'https://ejt-flsdk-hotnothot-app-api.herokuapp.com/profile',
         {
           name: this.state.name,
           description: this.state.description,

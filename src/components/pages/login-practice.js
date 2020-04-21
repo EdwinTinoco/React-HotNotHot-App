@@ -35,7 +35,7 @@ export default class LoginPractice extends Component {
     event.preventDefault();
     axios
       .get(
-        'https://jel-flask-dating-app-api.herokuapp.com/profiles',
+        'https://ejt-flsdk-hotnothot-app-api.herokuapp.com/profile',
       )
       .then(response => {
         let profileArray = response.data

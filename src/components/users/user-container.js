@@ -28,7 +28,7 @@ export default class UserContainer extends Component {
 
     getUserProfiles() {
         axios
-            .get("https://jel-flask-dating-app-api.herokuapp.com/profiles")
+            .get("https://ejt-flsdk-hotnothot-app-api.herokuapp.com/profiles")
             .then((response) => {
                 console.log("response data", response);
                 this.setState({
@@ -61,18 +61,12 @@ export default class UserContainer extends Component {
                 <div className="button-wrapper">
                     <button className="btn1" onClick={() => this.handleFilter("male")}>
                         Male
-          </button>
+                    </button>
                     <button className="btn2" onClick={() => this.handleFilter("female")}>
                         Female
-          </button>
+                    </button>
                 </div>
                 <div className="userProfile-wrapper-wrapper">
-
-                    {/* <div className="user-profiles-wrapper">
-            <div>
-              <button className="btn" onClick={() => this.handleFilter('male')}>Male</button>
-              <button className="btn" onClick={() => this.handleFilter('female')}>Female</button>                                    
-          </div> */}
                     {this.userProfiles()}
                 </div>
                 <div className='footer'>

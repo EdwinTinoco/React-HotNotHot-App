@@ -15,7 +15,7 @@ export default class UserProfile extends Component {
     handleIsHot = () => {
         let scoreHot = parseInt(this.state.isHot) + 1
         fetch(
-            `https://jel-flask-dating-app-api.herokuapp.com/profile/${this.props.item.id}`,
+            `https://ejt-flsdk-hotnothot-app-api.herokuapp.com/profile/${this.props.item.id}`,
             {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
@@ -34,7 +34,7 @@ export default class UserProfile extends Component {
     handleIsNotHot = () => {
         let scoreNotHot = parseInt(this.state.isNotHot) + 1
         fetch(
-            `https://jel-flask-dating-app-api.herokuapp.com/profile/${this.props.item.id}`,
+            `https://ejt-flsdk-hotnothot-app-api.herokuapp.com/profile/${this.props.item.id}`,
             {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
@@ -87,8 +87,7 @@ export default class UserProfile extends Component {
                 <div className="btn-wrapper">
                     <button className='profile-button' onClick={this.handleIsHot}>They are HOT!</button>
                     <button className='profile-button' >View Profile</button>
-                    <button className='profile-button' onClick={this.handleIsNotHot}>They are NOT!</button>
-                    {/* <style>width="12" height="10"</style> */}
+                    <button className='profile-button' onClick={this.handleIsNotHot}>They are NOT!</button>                    
                 </div>
             </div>
 
