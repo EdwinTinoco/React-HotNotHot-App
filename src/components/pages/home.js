@@ -10,8 +10,6 @@ export default function () {
             <h1>Home Page</h1>
 
             <div className="home-content-wrapper">
-                {/* <h1>Home</h1>      */}
-
                 <UserContainer />
             </div>
         </div>

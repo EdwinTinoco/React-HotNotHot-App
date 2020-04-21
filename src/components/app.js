@@ -8,7 +8,6 @@ import {
 
 import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home";
-import Auth from "./pages/auth";
 import About from "./pages/about";
 import NewAccount from './pages/create-new-account';
 import LoginPractice from './pages/login-practice';
@@ -27,17 +26,7 @@ export default class App extends Component {
 
             <Switch>
 
-              <Route exact path="/" component={Home} />
-              <Route
-                path="/auth"
-                render={props => (
-                  <Auth
-                    {...props}
-                    handleSuccessfulLogin={this.handleSuccessfulLogin}
-                    handleUnSuccessfulLogin={this.handleUnSuccessfulLogin}
-                  />
-                )}
-              />
+              <Route exact path="/" component={Home} />              
               <Route path="/about" component={About} />
               <Route
                 exact path="/profile/:slug"
@@ -46,8 +35,6 @@ export default class App extends Component {
               <Route path='/new-account' component={NewAccount} />
               <Route path='/login' component={LoginPractice} />
             </Switch>
-
-            {/* <Footer />        */}
           </div>
 
         </Router>
