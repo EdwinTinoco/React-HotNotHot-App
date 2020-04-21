@@ -7,7 +7,7 @@ import "../../style/user-profile.scss";
 export default function () {
     return (
         <div className="home">
-            <h1>Home</h1>
+            <h1>Home Page</h1>
 
             <div className="home-content-wrapper">
                 {/* <h1>Home</h1>      */}
