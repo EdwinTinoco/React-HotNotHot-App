@@ -143,6 +143,12 @@ color: white;
     height: 30px;
     width: 100%;
     color: #fff;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+      cursor: pointer;
+      background-color: #b3acac;
+    }
   }
 }
 
